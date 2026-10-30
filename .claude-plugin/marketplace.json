@@ -1,0 +1,6 @@
+{
+  "name": "stayon",
+  "description": "StayOn: project tasks and productive waiting for Claude Code.",
+  "owner": { "name": "ahzia" },
+  "plugins": [{ "name": "stayon", "source": "./" }]
+}

@@ -1,0 +1,41 @@
+{
+  "name": "stayon",
+  "version": "0.1.0",
+  "description": "Project tasks in TASKS.md, plus one useful thing to do while Claude works.",
+  "author": { "name": "ahzia" },
+  "license": "MIT",
+  "keywords": ["tasks", "todo", "TASKS.md", "focus", "productivity", "mod"],
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "taskFile": {
+      "type": "string",
+      "title": "Task file",
+      "description": "Path of the task file, relative to the project root. Empty: use TASKS.md, or .stayon/TASKS.md if only that exists.",
+      "default": ""
+    },
+    "suggestions": {
+      "type": "boolean",
+      "title": "Suggest tasks while Claude works",
+      "description": "Show one of your ready tasks above the prompt while Claude is working.",
+      "default": true
+    },
+    "suggestDelaySeconds": {
+      "type": "number",
+      "title": "Suggestion delay (seconds)",
+      "description": "How long a turn must run before a suggestion appears, and before a ready cue is worth showing.",
+      "default": 5
+    },
+    "notifyAfterSeconds": {
+      "type": "number",
+      "title": "Notify after (seconds)",
+      "description": "Send a desktop notification when a turn at least this long ends. 0 turns it off.",
+      "default": 60
+    },
+    "openOnStart": {
+      "type": "boolean",
+      "title": "Open the pane on start",
+      "description": "Open the StayOn pane when a session starts in a project that has a task file.",
+      "default": true
+    }
+  }
+}
