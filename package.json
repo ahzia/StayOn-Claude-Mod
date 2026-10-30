@@ -1,0 +1,16 @@
+{
+  "name": "stayon-claude-mod",
+  "private": true,
+  "description": "Development scripts for the StayOn Claude Code mod. The mod itself has no runtime dependencies.",
+  "license": "MIT",
+  "scripts": {
+    "validate": "claude plugin validate .",
+    "test": "claude plugin test .",
+    "typecheck": "tsc -p .",
+    "check": "npm run validate && npm run typecheck && npm test",
+    "dev": "claude --plugin-dir ."
+  },
+  "devDependencies": {
+    "typescript": "^5.6.0"
+  }
+}
